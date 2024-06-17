@@ -28,16 +28,17 @@ const Layout = () => {
       {loading ? (
         <Loader />
       ) : (
-        <LocomotiveScrollProvider options={options} scrollRef={scrollRef}>
-          <main data-scroll-container ref={scrollRef} id="main">
+        // <LocomotiveScrollProvider >
+          <main  id="main">
             <Navbar />
             <Outlet />
-            <Footer />
+            {/* <Footer /> */}
           </main>
-        </LocomotiveScrollProvider>
+        // </LocomotiveScrollProvider>
       )}
     </>
   );
 };
 
 export default Layout;
+

@@ -18,14 +18,8 @@ const FooterLink = ({ to, children }) => {
 const Footer = () => {
   return (
     <>
-      <div
-        className="w-screen h-[60vh] md:h-screen bg-transparent relative !-z-1 overflow-x-hidden"
-        data-scroll
-      ></div>
-      <footer
-        className="fixed bottom-0 !-z-1 w-full mx-auto rounded-md h-[90vh] pt-[20vh] overflow-hidden"
-        data-scroll
-      >
+      {/* <div className="w-screen h-[60vh] md:h-screen bg-transparent relative !-z-1 overflow-x-hidden"></div> */}
+      <footer className="fixed bottom-0 left-0 z-[-10] w-full mx-auto rounded-md h-[90vh] pt-[20vh] overflow-hidden">
         <div className="leftAnime anime"></div>
         <div className="topAnime anime"></div>
         <div className="rightAnime anime"></div>
