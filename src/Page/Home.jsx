@@ -23,14 +23,14 @@ const Home = () => {
         <Testimonials />
         <Contact />
         <InfiniteScroll />
-        <div className=" md:hidden block">
+        {/* <div className=" md:hidden block">
           <Footer />
-        </div>
+        </div> */}
       </div>
-      <div className="w-screen h-[75vh] md:h-screen bg-transparent relative !-z-0 overflow-x-hidden hidden md:block"></div>
+      {/* <div className="w-screen h-[75vh] md:h-screen bg-transparent relative !-z-0 overflow-x-hidden hidden md:block"></div>
       <div className=" hidden md:block">
         <Footer />
-      </div>
+      </div> */}
     </main>
   );
 };
