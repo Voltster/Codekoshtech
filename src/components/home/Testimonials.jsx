@@ -32,7 +32,7 @@ const Testimonials = () => {
 
   return (
     <section
-      className="w-full md:w-10/12 mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 relative my-20 px-4 md:px-0"
+      className="w-full heroBg z-10 md:w-10/12 mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 relative my-20 px-4 md:px-0"
       id="testimonial"
     >
       <div className="w-full md:w-4/12 h-[40vh] md:h-[55vh] overflow-hidden rounded  mb-8 md:mb-0 ">

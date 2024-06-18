@@ -8,13 +8,14 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import Layout from "./Layout.jsx";
+// import Layout from "./Layout.jsx";
 import Error404 from "./components/common/Error404.jsx";
+import Home from "./Page/Home.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
-      <Route path="" element={<App />} />
+    <Route path="/" element={<App />}>
+      {/* <Route path="" element={<Home />} /> */}
       <Route path="*" element={<Error404 />}></Route>
     </Route>
   )

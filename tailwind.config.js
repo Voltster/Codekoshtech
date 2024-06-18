@@ -12,9 +12,6 @@ export default {
           to: { transform: "translateX(-100%)" },
         },
       },
-      fontFamily: {
-        ethnocentric: ["Ethnocentric"],
-      },
     },
   },
   plugins: [],

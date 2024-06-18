@@ -11,7 +11,7 @@ const socialLinks = [
 const Hero = () => {
   return (
     <section
-      className="relative top-0  left-0  h-[100vh] flex w-full ml-auto gap-12 justify-center items-center pt-[6vw]  md:pt-[5vh]  overflow-x-hidden"
+      className="w-screen relative heroBg  z-10 top-0  left-0  h-[100vh] flex  ml-auto gap-12 justify-center items-center pt-[6vw]  md:pt-[5vh]  overflow-x-hidden"
       id="home"
     >
       <div className=" w-10 border-r border-gray-600  h-full bg-inherit z-[99] hidden md:block">
@@ -26,7 +26,7 @@ const Hero = () => {
         </ul>
       </div>
       <div className="md:w-1/2 relative ">
-        <h1 className="text-4xl md:text-[4.5vw] leading-none mb-4  px-6 md:px-0">
+        <h1 className="text-[4vh] md:text-[4.5vw] leading-none mb-4  px-6 md:px-0">
           <span className="text-transparent  bg-clip-text  bg-gradient-to-r from-blue-700 to-sky-400">
             Welcome
           </span>{" "}
@@ -53,7 +53,7 @@ const Hero = () => {
           Explore more
         </PrimaryButton>
       </div>
-      <div className="w-12/4 hidden md:block">
+      <div className="w-5/12 hidden md:block">
         <img src={heroImg} alt="hero image" loading="eager" />
       </div>
     </section>

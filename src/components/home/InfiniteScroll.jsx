@@ -27,7 +27,7 @@ const serviceData = [
 
 const InfiniteScroll = () => {
   return (
-    <section className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] py-20">
+    <section className="w-full heroBg relative z-10 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] py-20">
       <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll pointer-events-none">
         {serviceData.map((e, i) => (
           <div key={i}>

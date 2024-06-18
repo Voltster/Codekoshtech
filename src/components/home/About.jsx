@@ -24,7 +24,7 @@ const cardsData = [
 
 const About = () => {
   return (
-    <section className="md:text-center mt-20 pt-24 md:pt-0" id="about" >
+    <section className="md:text-center mt-20 pt-24 md:pt-0 heroBg relative z-10" id="about" >
       <h2 className="text-center text-5xl font-medium mb-8 md:mb-0 ">
         About Us
       </h2>

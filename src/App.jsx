@@ -1,25 +1,45 @@
 import "./Reset.css";
 import "./App.css";
-
-import Hero from "./components/home/Hero";
-import Services from "./components/home/Services";
-import About from "./components/home/About";
-import Contact from "./components/home/Contact";
-import InfiniteScroll from "./components/home/InfiniteScroll";
-import Testimonials from "./components/home/Testimonials";
-import Project from "./components/home/Project";
+import "./hooks/locomotive.css";
+import LocomotiveScroll from "locomotive-scroll";
+import Home from "./Page/Home";
+import Loader from "./components/common/Loader";
+import { useEffect, useRef, useState } from "react";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2600);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const scrollRef = useRef(null);
+
+  // useEffect(() => {
+  //   const locomotiveScroll = new LocomotiveScroll({
+  //     el: scrollRef.current,
+  //     smooth: true,
+  //   });
+  //   locomotiveScroll.init()
+  //   return () => locomotiveScroll.destroy();
+  // }, []);
+
   return (
-    <div data-scroll-section className=" relative min-w-[100vw] min-h-screen z-50 heroBg  shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px]">
-      <Hero />
-      <Services />
-      <About />
-      <Project />
-      <Testimonials />
-      <Contact />
-      <InfiniteScroll />
-    </div>
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div
+          id="main"
+          ref={scrollRef}
+          data-scroll-section
+          className="scroll-container relative min-w-[100vw] min-h-screen z-0 heroBg "
+        >
+          <Home />
+        </div>
+      )}
+    </>
   );
 }
 

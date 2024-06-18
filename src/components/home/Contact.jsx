@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <section className="w-10/12 mx-auto relative py-20" id="contact">
+    <section className="w-10/12 mx-auto relative py-20 heroBg z-10" id="contact">
       <h2 className="text-5xl font-medium text-center md:text-left">
         Contact Us
       </h2>

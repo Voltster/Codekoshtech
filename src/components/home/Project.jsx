@@ -31,7 +31,7 @@ const Project = () => {
 
   return (
     <section
-      className={`container relative mx-auto w-11/12 py-16 ${hovered ? "hovered" : ""}`} 
+      className={`container heroBg  z-10 relative mx-auto w-11/12 py-16 ${hovered ? "hovered" : ""}`} 
       id="portfolio"
     >
       <CustomCursor isVisible={hovered} />
